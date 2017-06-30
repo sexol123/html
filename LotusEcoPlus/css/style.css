@@ -1,0 +1,379 @@
+*{
+  margin: 0;
+  padding: 0;
+  /*border: 1px dashed red;*/
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    transition: .5s ease-in-out;
+}
+
+.clearfix:after{
+  content:'';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+body{
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  background-position: top;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+
+}
+header{
+  /*position: fixed;*/
+  /*width: 100%;*/
+}
+div{
+  /*box-sizing: border-box;*/
+}
+#first{
+  width: 100%;
+  text-align: center;
+  padding-top: 110px;
+  font-size: 56px;
+  text-shadow:1px 1px 2px black, 0 0 1em blue;
+}
+#first::first-letter{
+  color: green;
+}
+#first span{
+  color: red;
+}
+#first p{
+
+}
+#name{
+  color: white;
+  display: block;
+  float: left;
+  /*margin: 20px;*/
+  position: fixed;
+   z-index: 1;
+}
+#strip{
+  background-color: rgb(38, 41, 46);
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 1;
+}
+.wrapper{
+    min-height: 100vh;
+    margin: auto 6%;
+}
+
+.wrapper,#strip{
+  /*margin: 0 5%;*/
+  /*border: 1px dotted green;*/
+  /*max-width: 1366px;*/
+    /*background-image: url("images/background1.jpg");*/
+  }
+.menu a{
+  text-decoration: none;
+  color: white;
+}
+.menu a:hover{
+  color: #ad5053;
+}
+.title{
+  clear: both;
+  text-align: center;
+  margin-top: 40px;
+  padding-top:30px;
+  width: 100%;
+  cursor: default;
+}
+.menu{
+  display: block;
+  margin-top: 10px;
+  list-style: none;
+  text-transform: uppercase;
+  position:fixed;
+  right: 5%;
+   z-index: 1;
+}
+.menu li{
+  float: left;
+  margin-left: 30px;
+}
+.menu li:first-child{
+  margin-left: 0;
+}
+
+.house{
+  width: 280px;
+  height: 280px;
+  float: left;
+  margin: 40px;
+  text-align: center;
+}
+
+.m1{
+  float: left;
+  margin-left: 13%;
+}
+.m2{
+  float: right;
+  margin-right: 20%;
+}
+.d{
+  width: 250px;
+  height:250px;
+  /*padding-bottom: 50px;
+  padding-right: 5px;
+  background-color: green;
+  display: inline;*/
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  color: blue;
+
+}
+.d img{
+  border: 3px solid blue;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 50px;
+}
+/*.house:nth-child(even){
+  float: right;
+}*/
+.house img{
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  border: 8px solid green;
+  border-radius: 200px;
+}
+.house:hover{
+  transform: scale(1.5);
+  transition: 0.8s;
+}
+
+#cont{
+  padding: 20px;
+  float: left;
+  /*background-color: green;*/
+  line-height: 44px;
+  width: 60%;
+
+}
+form input,textarea{
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  border: 3px solid green;
+  border-radius: 40px;
+  text-indent: 20px;
+  text-align-last: center;
+  text-overflow: clip;
+   padding: 5px;
+}
+
+form input,#submit{
+  border: 3px solid green;
+  border-radius: 100px;
+  text-indent: 20px;
+
+}
+form input{
+
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: yellow;
+  transition: opacity 250ms ease-in-out;
+}
+
+/*#about{
+  height: 50%;
+  width: 50%;
+}*/
+
+#infocont{
+  padding: 20px;
+  margin-left: 40px;
+  margin-top: 25px;
+  /*display:block;*/
+  float:left;
+  background-color: yellow;
+  width: 22%;
+  height: 22%;
+  /*height: 170px;*/
+  font-size: 20px;
+  text-align: left;
+  /*text-indent: 20px;*/
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 5px solid green;
+  border-radius: 100px;
+}
+#infocont h3{
+  margin-top: 35px;
+  text-align: center;
+}
+#v2{
+  float: right;
+  margin-right: 10px;
+}
+#v1{
+
+}
+#v2,#v1{
+
+}
+#infocont ul{
+    -webkit-user-select: text;
+    -ms-user-select:text;
+    -moz-user-select:text;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  margin-bottom: 40px;
+}
+#about{
+  margin-top: 20%;
+}
+#submit{
+    background: yellow;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    border: 5px dashed black;
+    /*margin-top: 30px;*/
+}
+#submit:hover{
+  background-color: green;
+  border: 5px solid black;
+  font-size: 26px;
+  color: white;
+}
+
+.feedback {
+     border-radius: 0 10px 10px 0;
+     /*  Скругляем уголки */
+     width: 300px;
+     /* Ширина */
+     background: #333;
+     /* Цвет фона */
+     color: #fff;
+     /* Цвет текста */
+     position: fixed;
+     /* Фиксируем на одном месте  */
+     min-height: 100px;
+     /* Минимальная высота */
+     top: 100px;
+     left: -320px;
+     /* Положение */
+     border-right: 20px solid #fc0;
+     /* Оранжевая граница справа */
+     padding: 10px;
+     /* Поля вокруг */
+     transition: left 1s ease-out;
+     /* Анимация */
+ }
+ .feedback img {
+     float: left;
+     margin: 0 10px 0 0;
+ }
+ .feedback::after {
+     content:'Обратная связь';
+     /* Выводим текст */
+     color: #000;
+     /* Цвет надписи */
+     position: absolute;
+     /* Абсолютное позиционирование */
+     right: -60px;
+     bottom: 50px;
+     /* Положение текста */
+     transform: rotate(-90deg);
+     /* Поворачиваем текст */
+ }
+ .feedback:hover {
+     left: 0;
+     /* При наведении сдвигаем вправо */
+ }
+
+.card-container {
+  height: 250px;
+  perspective: 600;
+  position: relative;
+  width: 250px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.6s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+#audios {
+     border-radius: 0 10px 10px 0;
+     /*  Скругляем уголки */
+     width: 300px;
+     /* Ширина */
+     background: #333;
+     /* Цвет фона */
+     color: #fff;
+     /* Цвет текста */
+     position: fixed;
+     /* Фиксируем на одном месте  */
+     min-height: 100px;
+     /* Минимальная высота */
+     top: 250px;
+     left: -320px;
+     /* Положение */
+     border-right: 20px solid blue;
+     /* Оранжевая граница справа */
+     padding: 10px;
+     /* Поля вокруг */
+     transition: left 0.8s ease-out;
+     /* Анимация */
+ }
+#audios::after {
+    content:'Audio';
+    /* Выводим текст */
+    color: #000;
+    /* Цвет надписи */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    right: -30px;
+    bottom: 50px;
+    /* Положение текста */
+    transform: rotate(-90deg);
+    /* Поворачиваем текст */
+}
+#audios:hover {
+    left: 0;
+    /* При наведении сдвигаем вправо */
+}
