@@ -35,4 +35,20 @@
   #name{
     display: none !important;
   }
+
+}
+@media screen and (max-width:630px) {
+  .videocontainer{
+    margin-left: 20px;
+
+  }
+  #first{
+    font-size: 25px;
+  }
+  iframe{
+    margin: 10px;
+  }
+  #v1,#v2{
+    float: left;
+  }
 }

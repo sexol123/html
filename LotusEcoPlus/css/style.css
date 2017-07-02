@@ -131,6 +131,7 @@ div{
   align-items: center;
   vertical-align: middle;
   color: blue;
+  padding: 5px;
 
 }
 .d img{
@@ -151,8 +152,9 @@ div{
   border-radius: 200px;
 }
 .house:hover{
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 0.8s;
+  text-align: left;
 }
 
 #cont{
